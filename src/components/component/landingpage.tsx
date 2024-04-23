@@ -21,6 +21,7 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
+import Image from "next/image"
 
 export function Landingpage() {
   return (
@@ -111,7 +112,7 @@ export function Landingpage() {
                 <p className="text-gray-500 dark:text-gray-400 text-sm">$30,000.00</p>
               </Card>
             </div>
-            <img
+            <Image
               alt="Hero"
               className="mx-auto aspect-[3/1] overflow-hidden rounded-t-xl object-cover"
               height="300"
@@ -133,9 +134,9 @@ export function Landingpage() {
             </div>
             <div className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
               <div className="grid gap-1">
-                <h3 className="text-lg font-bold">Beginner's Guide</h3>
+                <h3 className="text-lg font-bold">Beginners Guide</h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">
-                  Start your trading journey with our comprehensive beginner's guide.
+                  Start your trading journey with our comprehensive beginners guide.
                 </p>
               </div>
               <div className="grid gap-1">
@@ -189,7 +190,7 @@ export function Landingpage() {
           <div className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                Empower Your Trading with QuantEdge's Developer Tools
+                Empower Your Trading with QuantEdges Developer Tools
               </h2>
               <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Leverage our powerful API and build custom trading solutions that fit your needs.
@@ -231,7 +232,7 @@ export function Landingpage() {
   )
 }
 
-function MountainIcon(props) {
+function MountainIcon(props: any) {
   return (
     <svg
       {...props}
