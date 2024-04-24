@@ -52,7 +52,7 @@ export function Dev() {
             Community
           </Link>
         </nav>
-        <Button className="hidden lg:inline-flex" variant="primary">
+        <Button className="hidden lg:inline-flex">
           Join Now
         </Button>
         <Sheet>
@@ -80,7 +80,7 @@ export function Dev() {
                 <UsersIcon className="h-6 w-6" />
                 Community
               </Link>
-              <Button className="w-full" variant="primary">
+              <Button className="w-full">
                 Join Now
               </Button>
             </div>
@@ -99,7 +99,6 @@ export function Dev() {
                 enthusiasts.
               </p>
               <div className="flex flex-col gap-2 sm:flex-row">
-                <Button variant="primary">Join Now</Button>
                 <Button variant="secondary">Learn More</Button>
               </div>
             </div>
