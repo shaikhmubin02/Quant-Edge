@@ -17,6 +17,9 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
+'use client'
+ 
+import { useRouter } from 'next/navigation'
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
@@ -24,6 +27,7 @@ import { Input } from "@/components/ui/input"
 import Image from "next/image"
 
 export function Landingpage() {
+  const router = useRouter()
   return (
     <div className="flex flex-col min-h-[100dvh] bg-white dark:bg-gray-950 dark:text-gray-50">
       <header className="px-4 lg:px-6 h-14 flex items-center">
@@ -44,10 +48,11 @@ export function Landingpage() {
           <Button
             className="text-sm font-medium dark:border-gray-400 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-gray-50"
             variant="outline"
+            onClick={() => router.push('/signin')}
           >
             Login
           </Button>
-          <Button className="text-sm font-medium dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-200">
+          <Button className="text-sm font-medium dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-200" onClick={() => router.push('/signup')}>
             Sign Up
           </Button>
         </nav>
